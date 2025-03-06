@@ -1,0 +1,142 @@
+/* Simple and Clean Recipe Website Styling */
+:root {
+    --text-color: #333;
+    --background-color: #fff;
+    --accent-color: #e63946;
+    --spacing: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+.site-header {
+    margin-bottom: var(--spacing);
+    padding: 1rem 0;
+    border-bottom: 2px solid #eee;
+}
+
+.author-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.author-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.site-title {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.author-intro {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Recipe Cards */
+.recipe-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.recipe-card {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1.5rem;
+}
+
+.recipe-card:last-child {
+    border-bottom: none;
+}
+
+.recipe-card h2 {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.recipe-card p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.nav-link {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Recipe Pages */
+.home-link {
+    display: inline-block;
+    color: var(--accent-color);
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+.recipe-header {
+    margin-bottom: var(--spacing);
+}
+
+.recipe-description, 
+.ingredients-list, 
+.instructions {
+    margin-bottom: var(--spacing);
+}
+
+.ingredients-list ul,
+.instructions ol {
+    padding-left: 1.5rem;
+}
+
+.ingredients-list li,
+.instructions li {
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .author-section {
+        flex-direction: column;
+        text-align: center;
+    }
+} 
